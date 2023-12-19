@@ -1,0 +1,1 @@
+# Created to test the functionality of routes in Next.js.
