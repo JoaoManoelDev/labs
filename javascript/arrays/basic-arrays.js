@@ -1,22 +1,36 @@
-// Create Array
+/* 
+  O método slice() é uma função em JavaScript que opera em arrays e strings.
+  Ele retorna uma parte de um array ou string, selecionada de acordo com os
+  índices fornecidos, sem modificar o array ou a string original. O método
+  slice() aceita dois parâmetros opcionais: o índice de início e o índice de fim.
 
+  array.slice(início, fim)
+
+  array: O array original.
+  início: Índice de início da extração (inclusive).
+  fim: Índice de fim da extração (exclusive). O elemento no índice fim não é incluído na fatia.
+*/
+
+// Criar array
+
+//                    0        1       2        3
 const arrayNames = ["João", "Karol", "Esh", "Juninho"]
 
 const newArrayNames = arrayNames.slice(0, 3)
 
 newArrayNames.push("Moisés")
 
-console.log("[NEW ARRAY] ->", newArrayNames) // output: ["João", "Karol", "Esh", "Moises"]
+console.log("[NOVO ARRAY] ->", newArrayNames) // saída: ["João", "Karol", "Esh", "Moises"]
 
-// Transform String in Array
+// Transformar String em Array
 
-const name = "João Manoel Araujo Junior"
-const nameArray = name.split(" ")
+const fullName = "João Manoel Araujo Junior"
+const nameArray = fullName.split(" ")
 
-console.log("[TRANSFORM STRING IN ARRAY] ->", nameArray) // output: [ 'João', 'Manoel', 'Araujo', 'Junior' ]
+console.log("[TRANSFORMAR STRING EM ARRAY] ->", nameArray) // saída: [ 'João', 'Manoel', 'Araujo', 'Junior' ]
 
-// Transform Array in String
+// Transformar Array em String
 
 const nameString = nameArray.join(" ")
 
-console.log("[TRANSFORM ARRAY IN STRING] ->", nameString) // output: "João Manoel Araujo Junior"
+console.log("[TRANSFORMAR ARRAY EM STRING] ->", nameString) // saída: "João Manoel Araujo Junior"
