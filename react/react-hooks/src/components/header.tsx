@@ -12,6 +12,7 @@ export const Header = () => {
 
         <nav className="flex items-center space-x-4 lg:space-x-6">
           <NavLink to="/">useState</NavLink>
+          <NavLink to="/use-effect">useEffect</NavLink>
         </nav>
       </div>
     </header>
