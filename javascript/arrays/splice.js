@@ -29,7 +29,7 @@ const arrayCars = ["Civic", "Ferrari", "Argo", "BMW", "HB20"]
 const removedArrayCars = arrayCars.splice(-4, Number.MAX_VALUE) // Number.MAX_VALUE -> Maior número possível no JS
 
 console.log("[ARRAY DE CARROS ORIGINAL]", arrayCars) // saída: [ "Civic" ]
-console.log("[CARROS REMOVIDOS DO ARRAY]", removedArrayCars) // saída: ["Civic", "Ferrari", "Argo", "BMW", "HB20"]
+console.log("[CARROS REMOVIDOS DO ARRAY]", removedArrayCars) // saída: ["Ferrari", "Argo", "BMW", "HB20"]
 
 // Exemplos de como usar o splice ao invés de pop, shift, push e unshift
 
