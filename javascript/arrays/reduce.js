@@ -85,7 +85,7 @@ console.log("[CAMPEÃO MAIS VELHO]", olderChampion)
 
 // Retorne um contador de nomes por iniciais
 const countInitials = championsArray.reduce((acc, champion) => {
-  const firstLatter = champion.name[0].toLowerCase()
+  const firstLatter = champion?.name[0].toLowerCase()
 
   if (acc[firstLatter]) {
     acc[firstLatter]++
